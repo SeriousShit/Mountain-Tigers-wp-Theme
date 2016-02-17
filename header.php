@@ -11,8 +11,10 @@
 <div id="wrapper" class="hfeed">
     <header id="header" role="banner">
         <section id="branding">
+            <a href=""><img id="slide-img-1" src="<?php echo get_bloginfo('template_directory');?>/img/Logo.png" class="slide" alt="" /></a>
             <div id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>
                 '; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
+
                           title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>"
                           rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>
                 '; } ?>
