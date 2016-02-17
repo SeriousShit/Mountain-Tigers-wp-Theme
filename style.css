@@ -1934,3 +1934,12 @@ hr {
     -o-transform: rotate(1deg) ;
     -ms-transform: rotate(1deg) ;
 }
+
+#footer {
+    margin-top: 1rem;
+}
+#copyright {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+}
