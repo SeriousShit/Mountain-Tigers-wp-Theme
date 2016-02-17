@@ -9,7 +9,7 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="wrapper" class="">
-    <header id="header" class="w3-row" role="banner">
+    <header id="header" class="w3-black" role="banner">
         <section id="branding">
             <div id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>
                 '; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>"

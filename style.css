@@ -383,6 +383,7 @@ table, th, td {
 
 ul.w3-ul {
     list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0
 }
@@ -427,6 +428,7 @@ img.w3-image, .w3-image img {
 }
 
 .w3-navbar {
+    list-style: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -434,7 +436,8 @@ img.w3-image, .w3-image img {
 }
 
 .w3-navbar li {
-    float: left
+    float: left;
+    list-style: none;
 }
 
 .w3-navbar li a {
@@ -465,6 +468,7 @@ img.w3-image, .w3-image img {
 }
 
 .w3-navbar ul.w3-right {
+    list-style: none;
     list-style-type: none;
 }
 
@@ -1898,4 +1902,35 @@ hr {
     border: 0;
     border-top: 1px solid #eee;
     margin: 20px 0;
+}
+
+#header {
+    height: 200px;
+}
+.menu {
+    display: block;
+    width: 100%;
+    transform: rotate(359deg) ;
+    -webkit-transform: rotate(359deg) ;
+    -moz-transform: rotate(359deg) ;
+    -o-transform: rotate(359deg) ;
+    -ms-transform: rotate(359deg) ;
+    height: 50px;
+}
+.menu li {
+
+}
+.sub-menu {
+    position: absolute;
+    display: block;
+    left: 0;
+    background: rgba(255,212,51,100);
+    width: 100%;
+}
+.sub-menu li {
+    transform: rotate(1deg) ;
+    -webkit-transform: rotate(1deg) ;
+    -moz-transform: rotate(1deg) ;
+    -o-transform: rotate(1deg) ;
+    -ms-transform: rotate(1deg) ;
 }
