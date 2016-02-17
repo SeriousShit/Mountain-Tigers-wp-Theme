@@ -8,8 +8,8 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div id="wrapper" class="hfeed">
-    <header id="header" role="banner">
+<div id="wrapper" class="">
+    <header id="header" class="w3-row" role="banner">
         <section id="branding">
             <div id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>
                 '; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
@@ -19,11 +19,8 @@
             </div>
             <div id="site-description"><?php bloginfo( 'description' ); ?></div>
         </section>
-        <nav id="menu" role="navigation">
-            <div id="search">
-                <?php get_search_form(); ?>
-            </div>
+        <nav id="menu" role="navigation" class="w3-navbar w3-black">
             <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
         </nav>
     </header>
-    <div id="container">
+    <div id="container" class="w3-container">
