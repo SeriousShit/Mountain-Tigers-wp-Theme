@@ -1,4 +1,13 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(array('w3-card-4','w3-container')); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(array('w3-white','w3-container')); ?>>
+    <?php if ( has_post_thumbnail() ) {
+        ?>
+
+        <figure class="w3-image">
+            <?php the_post_thumbnail(); ?>
+        </figure>
+     <?php
+    }
+    ?>
 <header>
     <?php if ( is_singular() ) { echo '<h1 class="entry-title">'; } else { echo '<h2 class="entry-title">'; } ?><a
         href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"

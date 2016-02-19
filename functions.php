@@ -49,7 +49,7 @@ function blankslate_widgets_init()
     register_sidebar(array(
         'name' => __('Sidebar Widget Area', 'blankslate'),
         'id' => 'primary-widget-area',
-        'before_widget' => '<div id="%1$s" class="w3-card-2 widget-container %2$s">',
+        'before_widget' => '<div id="%1$s" class="box-2 widget-container %2$s">',
         'after_widget' => "</div>",
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',

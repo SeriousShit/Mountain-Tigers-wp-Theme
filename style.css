@@ -91,7 +91,7 @@ svg:not(:root) {
 }
 
 figure {
-    margin: 1em 40px
+    margin: 1rem 0;
 }
 
 hr {
@@ -101,7 +101,7 @@ hr {
 
 code, kbd, pre, samp {
     font-family: monospace, monospace;
-    font-size: 1em
+    font-size: 1em;
 }
 
 button, input, optgroup, select, textarea {
@@ -1989,6 +1989,10 @@ hr {
     -webkit-transform: skewX(-25deg) translateX(-15px);
 }
 
+#container {
+    margin-top: 1rem;
+}
+
 #footer {
     margin-top: 1rem;
 }
@@ -2006,5 +2010,41 @@ hr {
         -moz-box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.4);
         box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.4);
     }
+}
+.box-1, .box-2, .box-3 {
+    border: 7px solid #FCCB35;
+    margin-bottom: 1rem;
+    position: relative;
+    padding: 0 6%;
+    color: #ffffff;
+}
+.box-2 {
+    border: 7px solid #ffd44f;
+}
+.box-2 h1, .box-2 h2, .box-2 h3, .box-2 h4 {
+    color: #ffd44f;
+}
+.box-3 {
+    border: 7px solid #ffffff;
+}
+.box-3 h1, .box-3 h2, .box-3 h3, .box-3 h4 {
+    color: #ffffff;
+}
+.box-1 h1, .box-1 h2, .box-1 h3, .box-1 h4 {
+    color: #FCCB35;
+}
 
+.box-1:after, .box-1:before, .box-2:after, .box-2:before,.box-3:after, .box-3:before  {
+    display: block;
+    content: "";
+    background: rgb(3,24,13);
+    height: 7px;
+    position: absolute;
+    width: 88%;
+    left: 6%;
+    right: 6%;
+}
+
+.box-1:before, .box-2:before, .box-3:before {
+    top:-7px;
 }
