@@ -85,6 +85,19 @@ function blankslate_comments_number($count)
 }
 
 /*-----------------------------------------------------------------------------------*/
+/*  Enqueue scripts and styles.
+/*-----------------------------------------------------------------------------------*/
+
+function mountainTigers_scripts() {
+    // Loading Google's font "Noto Sans"
+    wp_enqueue_style( 'notoSans_google_font', '//fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic', false, null, 'all' );
+
+    // Loading Custom font icons
+    wp_enqueue_style( 'tempe_font', get_template_directory_uri().'/css/tempe.css' );
+}
+add_action( 'wp_enqueue_scripts', 'mountainTigers_scripts' );
+
+/*-----------------------------------------------------------------------------------*/
 /*  Loading theme widgets.
 /*-----------------------------------------------------------------------------------*/
 

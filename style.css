@@ -445,10 +445,10 @@ img.w3-image, .w3-image img {
     padding: 8px 16px
 }
 
-.w3-navbar li a:hover {
+/*.w3-navbar li a:hover {
     color: #000;
     background-color: #ccc
-}
+}*/
 
 .w3-navbar .w3-dropdown-hover, .w3-navbar .w3-dropdown-click {
     position: static
@@ -1880,10 +1880,11 @@ html, body {
     font-size: 15px;
     line-height: 1.5;
     font-weight: normal;
+    background-color: rgb(3,24,13);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Segoe UI", Verdana, sans-serif;
+    font-family: "Tempe", Verdana, sans-serif;
     font-weight: 400;
     line-height: 1;
     margin: 20px 0;
@@ -1905,7 +1906,6 @@ hr {
 }
 
 #branding {
-    height: 200px;
     overflow: hidden;
     display: block;
     position: relative;
@@ -1915,9 +1915,10 @@ hr {
 }
 #branding #logo-container{
     position: absolute;
-    top: 20px;
-    width: 25%;
-    max-width: 250px;
+    top: 35px;
+    left: 25px;
+    width: 20%;
+    max-width: 180px;
 }
 #branding hr {
     display: block;
@@ -1938,9 +1939,18 @@ hr {
     width: 100%;
     position: relative;
     height: 100px;
+    font-family: Tempe;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 .menu li {
-
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.menu .current-menu-parent, .menu .current-menu-item {
+    color: rgb(239,65,53);
 }
 .sub-menu {
     position: absolute;
@@ -1948,8 +1958,35 @@ hr {
     left: 0;
     background: rgba(255,212,51,100);
     width: 100%;
+    font-size: 1.2rem;
+    padding: 0 1.5rem;
 }
 .sub-menu li {
+    margin: 0;
+    color: rgba(3,24,13,0.8);
+}
+.sub-menu .current-menu-item {
+    color: #000000;
+}
+
+
+/* Show dropdown */
+.sub-menu, .sub-menu li {
+    opacity: 0;
+    visibility: hidden;
+}
+.sub-menu li {
+    transition: .2s ease -webkit-transform;
+}
+.menu > li.current-menu-item .sub-menu, .menu > li.current-menu-item .sub-menu li,.menu > li.current-menu-parent .sub-menu, .menu > li.current-menu-parent .sub-menu li {
+    opacity: 1;
+    visibility: visible;
+}
+.menu > li:hover .sub-menu li:nth-child(even) {
+    -webkit-transform: skewX(25deg) translateX(15px);
+}
+.menu > li:hover .sub-menu li:nth-child(odd) {
+    -webkit-transform: skewX(-25deg) translateX(-15px);
 }
 
 #footer {
@@ -1961,13 +1998,13 @@ hr {
     line-height: 50px;
 }
 @media all and (min-width: 1280px) {
-    html, body {
-        background-color: rgb(3,24,13);
-    }
     #wrapper {
         max-width: 1280px;
         width: 1280px;
         margin: 0 auto;
+        -webkit-box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.4);
+        -moz-box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.4);
+        box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.4);
     }
 
 }
