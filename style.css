@@ -1806,7 +1806,7 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
 ********************************/
 .w3-theme {
     color: #fff !important;
-    background-color: #000 !important
+    background-color: rgb(3,24,13) !important;
 }
 
 .w3-theme-light {
@@ -1904,18 +1904,40 @@ hr {
     margin: 20px 0;
 }
 
-#header {
+#branding {
     height: 200px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+#branding figure {
+    margin: 0;
+}
+#branding #logo-container{
+    position: absolute;
+    top: 20px;
+    width: 25%;
+    max-width: 250px;
+}
+#branding hr {
+    display: block;
+    width: 100%;
+    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    height: 40px;
+    position: absolute;
+    bottom: -40px;
+    background: rgb(3,24,13);
+    border: none;
 }
 .menu {
     display: block;
     width: 100%;
-    transform: rotate(359deg) ;
-    -webkit-transform: rotate(359deg) ;
-    -moz-transform: rotate(359deg) ;
-    -o-transform: rotate(359deg) ;
-    -ms-transform: rotate(359deg) ;
-    height: 50px;
+    position: relative;
+    height: 100px;
 }
 .menu li {
 
@@ -1928,11 +1950,6 @@ hr {
     width: 100%;
 }
 .sub-menu li {
-    transform: rotate(1deg) ;
-    -webkit-transform: rotate(1deg) ;
-    -moz-transform: rotate(1deg) ;
-    -o-transform: rotate(1deg) ;
-    -ms-transform: rotate(1deg) ;
 }
 
 #footer {
@@ -1942,4 +1959,15 @@ hr {
     overflow: hidden;
     height: 50px;
     line-height: 50px;
+}
+@media all and (min-width: 1280px) {
+    html, body {
+        background-color: rgb(3,24,13);
+    }
+    #wrapper {
+        max-width: 1280px;
+        width: 1280px;
+        margin: 0 auto;
+    }
+
 }

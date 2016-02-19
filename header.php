@@ -9,17 +9,13 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="wrapper" class="">
-    <header id="header" class="w3-black" role="banner">
+    <header id="header" class="w3-theme" role="banner">
         <section id="branding">
-            <div id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>
-                '; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-                          title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>"
-                          rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>
-                '; } ?>
-            </div>
-            <div id="site-description"><?php bloginfo( 'description' ); ?></div>
+            <?php mountainTigers_headerImage(); ?>
+            <?php mountainTigers_logo(); ?>
+            <hr>
         </section>
-        <nav id="menu" role="navigation" class="w3-navbar w3-black">
+        <nav id="menu" role="navigation" class="w3-navbar w3-theme">
             <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
         </nav>
     </header>
