@@ -8,24 +8,31 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div id="wrapper" class="hfeed">
-    <header id="header" role="banner">
-        <section id="branding">
-            <a href=""><img id="slide-img-1" src="<?php echo get_bloginfo('template_directory');?>/img/Logo.png" class="slide" alt="" /></a>
-            <div id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>
-                '; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
+<div id="wrapper" class="">
+    <header id="header" class="" role="banner">
+        <section id="branding" class="w3-row" style="background: url(<?php echo get_bloginfo('template_directory');?>/img/header.jpg)">
 
-                          title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>"
-                          rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>
-                '; } ?>
-            </div>
-            <div id="site-description"><?php bloginfo( 'description' ); ?></div>
+            <a class="w3-col m3" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <img id="header_logo" src="<?php echo get_bloginfo('template_directory');?>/img/Logo.png" class="slide" alt="" />
+            </a>
+            <!--<div class="w3-col m8 id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>-->
+            <!--'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>"-->
+
+            <!--title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>"-->
+            <!--rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>-->
+            <!--'; } ?>-->
+            <!--</div>-->
+            <!--<div id="site-description"><?php bloginfo( 'description' ); ?></div>-->
+
+            <hr class="shadow_to_top">
         </section>
-        <nav id="menu" role="navigation">
-            <div id="search">
-                <?php get_search_form(); ?>
-            </div>
+
+
+
+        <nav role="navigation" class="w3-navbar shadow_to_bottom">
             <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
         </nav>
     </header>
-    <div id="container">
+
+    <div id="container" class="w3-container">
+        <div class="w3-row">

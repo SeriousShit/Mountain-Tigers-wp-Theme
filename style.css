@@ -574,26 +574,7 @@ img.w3-image, .w3-image img {
     cursor: pointer
 }
 
-.w3-pagination {
-    display: inline-block;
-    padding: 0;
-    margin: 0
-}
 
-.w3-pagination li {
-    display: inline
-}
-
-.w3-pagination li a {
-    text-decoration: none;
-    color: #000;
-    float: left;
-    padding: 8px 16px
-}
-
-.w3-pagination li a:hover, .w3-pagination li a:focus {
-    background-color: #ccc
-}
 
 .w3-input-group, .w3-group {
     margin-top: 24px;
@@ -1800,5 +1781,360 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
 /********************************
 **           Theme             **
 ********************************/
+.w3-theme {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.w3-theme-light {
+    color: #000 !important;
+    background-color: #eee !important
+}
+
+.w3-theme-dark {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.w3-text-theme {
+    color: #000 !important
+}
+
+.w3-theme-l5 {
+    color: #000 !important;
+    background-color: #eee !important
+}
+
+.w3-theme-l4 {
+    color: #000 !important;
+    background-color: #d0d0d0 !important
+}
+
+.w3-theme-l3 {
+    color: #000 !important;
+    background-color: #b0b0b0 !important
+}
+
+.w3-theme-l2 {
+    color: #fff !important;
+    background-color: #777777 !important
+}
+
+.w3-theme-l1 {
+    color: #fff !important;
+    background-color: #595959 !important
+}
+
+.w3-theme-d1 {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.w3-theme-d2 {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.w3-theme-d3 {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.w3-theme-d4 {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.w3-theme-action {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+/********************************
+**           Customizing       **
+********************************/
+html, body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: normal;
+    background-color: rgb(3,24,13);
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-weight: inherit;
+    text-decoration:none;
+}
 
 
+
+h1 {font-size: 36px}
+h2 {font-size: 30px}
+h3 {font-size: 24px}
+h4 {font-size: 20px}
+h5 {font-size: 18px}
+h6 {font-size: 16px}
+
+
+hr {
+    height: 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+#wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/********************************
+**           Fonts            **
+********************************/
+
+
+@font-face {
+    font-family: 'Tempe';
+    src: url('fonts/tempe-webfont.eot');
+    src: url('fonts/tempe-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/tempe-webfont.woff2') format('woff2'),
+    url('fonts/tempe-webfont.woff') format('woff'),
+    url('fonts/tempe-webfont.ttf') format('truetype'),
+    url('fonts/tempe-webfont.svg#temperegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/********************************
+**           Header            **
+********************************/
+
+#header #header_logo{
+    width: 300px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#header .menu{
+    display: block;
+    font-family: "Tempe", Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+#header hr {
+    display: block;
+    width: 100%;
+    max-width: 1280px;
+    transform: rotate(-1deg) skewX(-1deg);
+    -webkit-transform: rotate(-1deg)  skewX(-1deg);
+    -moz-transform: rotate(-1deg)  skewX(-1deg);
+    -o-transform: rotate(-1deg)  skewX(-1deg);
+    -ms-transform: rotate(-1deg) skewX(-1deg);
+
+    height: 45px;
+    position: absolute;
+    margin-top: 200px;
+
+    background: rgb(3, 24, 13);
+    border: none;
+}
+
+#header .menu {
+
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 100px;
+    font-family: Tempe;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background: rgb(3, 24, 13);
+
+}
+.menu ul {
+    padding-left: 0;
+}
+
+.menu li {
+    list-style-type: none;
+    float: left
+}
+
+.menu .current_page_item,
+.menu .current_page_parent,
+.menu li a:hover{
+    color: rgb(239,65,53);
+}
+
+.menu li a:hover{
+    color: rgb(239,65,53);
+    background-color: rgba(3,24,13,0.8);;
+}
+
+.menu li ul {
+    position: absolute;
+    display: block;
+    left: 0;
+    background: rgba(255,212,51,100);
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0 1.5rem;
+}
+
+.menu li ul li {
+    margin: 0;
+    color: rgba(3,24,13,0.8);
+}
+
+.menu li ul .current-menu-item {
+    color: #000000;
+}
+
+
+/* Show dropdown */
+
+.menu li ul li {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu .current_page_item .children li {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/********************************
+**           Content           **
+********************************/
+
+#container{
+    margin-top: 20px;
+}
+
+article{
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+article img{
+    width:100%;
+    height: auto;
+}
+
+article h2{
+    text-transform:uppercase;
+}
+
+/********************************
+**           Footer            **
+********************************/
+
+#footer{
+    background-color: rgb(255,255,255);
+}
+
+.pagination .screen-reader-text{
+    display: none;
+
+}
+
+.pagination_div{
+    background-color: rgb(252,203,53);
+    height: 50px;
+    font-family: "Tempe", Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.sponsoren_div{
+    min-height: 64px;
+}
+
+.nav-links .page-numbers{
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease
+}
+
+.nav-links {
+    display: inline-block;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.nav-links .page-numbers {
+    display: inline
+}
+
+.nav-links .page-numbers {
+    text-decoration: none;
+    color: #000;
+    float: left;
+    padding: 4px 12px 0px 12px;
+    margin-left: 4px;
+}
+
+.pagination_div .nav-links .page-numbers:hover,
+.pagination_div .nav-links .current,
+#comments .submit{
+    background-color: rgb(239,65,53);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 2px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+/********************************
+**           Comments          **
+********************************/
+
+#comments{
+    background-color: white;
+}
+
+#commentform{
+    max-width: 600px;
+}
+
+#comments input,
+#comments textarea{
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #808080;
+    width: 100%;
+}
+#comments textarea{
+    border: solid 1px #eeeeee;
+    border-bottom: 1px solid #808080;
+}
+
+#comments-list ul{
+    list-style-type: none;
+}
+
+
+/********************************
+**           Shadow            **
+********************************/
+
+.shadow_to_top{
+    box-shadow: 0 -2px 5px 0px rgba(0, 0, 0, 0.2),
+    0 -2px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.shadow_to_bottom{
+    box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.2),
+    0 2px 10px 0 rgba(0, 0, 0, 0.15);
+}
