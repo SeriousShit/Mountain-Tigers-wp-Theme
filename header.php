@@ -10,11 +10,12 @@
 <body <?php body_class(); ?>>
 <div id="wrapper" class="">
     <header id="header" class="" role="banner">
-        <section id="branding" class="w3-row" style="background: url(<?php echo get_bloginfo('template_directory');?>/img/header.jpg)">
+        <a class="header_logo_link" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <section id="branding" class="w3-row" style="background: url(<?php echo get_bloginfo('template_directory');?>/img/header.png); background-size: cover;">
 
-            <a class="w3-col m3" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <img id="header_logo" src="<?php echo get_bloginfo('template_directory');?>/img/Logo.png" class="slide" alt="" />
-            </a>
+
+                <!--<img id="header_logo" src="<?php echo get_bloginfo('template_directory');?>/img/Logo.png" class="slide" alt="" />-->
+
             <!--<div class="w3-col m8 id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>-->
             <!--'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>"-->
 
@@ -25,7 +26,8 @@
             <!--<div id="site-description"><?php bloginfo( 'description' ); ?></div>-->
 
             <hr class="shadow_to_top">
-        </section>
+            </section>
+        </a>
 
 
 
