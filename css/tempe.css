@@ -1,0 +1,12 @@
+
+@font-face {
+    font-family: 'Tempe';
+    src: url('../fonts/tempe-webfont.eot');
+    src: url('../fonts/tempe-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tempe-webfont.woff2') format('woff2'),
+         url('../fonts/tempe-webfont.woff') format('woff'),
+         url('../fonts/tempe-webfont.ttf') format('truetype'),
+         url('../fonts/tempe-webfont.svg#temperegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
