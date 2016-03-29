@@ -13,18 +13,6 @@
         <a class="header_logo_link" href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <section id="branding" class="w3-row" style="background: url(<?php echo get_bloginfo('template_directory');?>/img/header.png); background-size: cover;">
 
-
-                <!--<img id="header_logo" src="<?php echo get_bloginfo('template_directory');?>/img/Logo.png" class="slide" alt="" />-->
-
-            <!--<div class="w3-col m8 id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>-->
-            <!--'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>"-->
-
-            <!--title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>"-->
-            <!--rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>-->
-            <!--'; } ?>-->
-            <!--</div>-->
-            <!--<div id="site-description"><?php bloginfo( 'description' ); ?></div>-->
-
             <hr class="shadow_to_top">
             </section>
         </a>

@@ -3,14 +3,14 @@
 </div>
 <footer id="footer" role="contentinfo">
 
-    <div class="w3-row pagination_div shadow_to_top">
+    <div class="w3-row pagination_div innershadow_to_top">
         <div class="w3-col w3-container m12">
 
             <?php the_posts_pagination( array('mid_size' => 1) ); ?>
         </div>
     </div>
 
-    <div class="w3-row shadow_to_top">
+    <div class="w3-row ">
 
         <aside id="sidebar " class="sponsoren_div" role="complementary">
             <?php if ( is_active_sidebar( 'footer-widget-area' ) ) : ?>
